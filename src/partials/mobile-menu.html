@@ -1,0 +1,60 @@
+<!-- Кнопка з артибутами і класами для відкриття мобільного меню -->
+<!-- <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+    Order flowers
+</button> -->
+
+<section class="mobile-menu container js-menu-container" id="mobile-menu">
+    <button class="button-close js-close-menu menu-toggle" data-modal-close>
+        <svg>
+            <use></use>
+        </svg>
+    </button>
+    <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">Anemone</li>
+        <li class="mobile-menu__item">About us</li>
+        <li class="mobile-menu__item">Store</li>
+        <li class="mobile-menu__item">Delivery</li>
+        <li class="mobile-menu__item">Blog</li>
+    </ul>
+</section>
+
+
+////////////////////////////////////////////////////////////
+<!-- Скрипт для відкриття і закриття мобільного меню -->
+
+<!-- (() => {
+const mobileMenu = document.querySelector('.js-menu-container');
+const openMenuBtn = document.querySelector('.js-open-menu');
+const closeMenuBtn = document.querySelector('.js-close-menu');
+
+const toggleMenu = () => {
+const isMenuOpen =
+openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+mobileMenu.classList.toggle('is-open');
+
+const scrollLockMethod = !isMenuOpen
+? 'disableBodyScroll'
+: 'enableBodyScroll';
+bodyScrollLock[scrollLockMethod](document.body);
+};
+
+openMenuBtn.addEventListener('click', toggleMenu);
+closeMenuBtn.addEventListener('click', toggleMenu);
+
+// Close the mobile menu on wider screens if the device orientation changes
+window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
+if (!e.matches) return;
+mobileMenu.classList.remove('is-open');
+openMenuBtn.setAttribute('aria-expanded', false);
+bodyScrollLock.enableBodyScroll(document.body);
+});
+})(); -->
+/////////////////////////////////////////////////////
+
+<!-- Підключення скриптів для мобМеню в html файлі -->
+
+<!-- <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+<script src="./js/mobile-menu.js"></script> -->
