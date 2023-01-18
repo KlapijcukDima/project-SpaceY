@@ -26,12 +26,17 @@
     }
 }
 
-.logo {    
+.icon {    
 
     &__svg {
         width: 45px;
         height: 35px;
-        fill: $icon-black;        
+        fill: $icon-black; 
+
+        @include for-size(tablet) {
+            width: 72px;
+            height: 57px; 
+        }
 }
 }
 
