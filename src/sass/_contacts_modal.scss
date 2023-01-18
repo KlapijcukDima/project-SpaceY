@@ -93,7 +93,7 @@
 
     &__button {
         
-        background-color: $main-theme-color-unfocused;
+        background-color: $main-theme-color;
         width:100%;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -109,6 +109,10 @@
             font-size: 18px;;
             padding-top: 14px;
             padding-bottom: 14px;
+        }
+
+        &:disabled {
+            background-color: $main-theme-color-unfocused;
         }
     }
 
@@ -271,6 +275,7 @@
         padding: 10px 12px;
         font-size: 12px;
         line-height: 1.25em;
+        transition: border 300ms linear;
 
         @include for-size(tablet) {
             height: 49px;
@@ -284,9 +289,9 @@
     }
 }
 
-.name-label__input {
+.name-label__input, .mail-label__input {
 
-    &:invalid{
+    &:not(:placeholder-shown):invalid{
         border-color: red;
     }
 
@@ -320,6 +325,7 @@
         padding: 10px 12px;
         font-size: 12px;
         line-height: 1.25em;
+        transition: border 300ms linear;
 
             @include for-size(tablet) {
             height: 49px;
@@ -372,18 +378,12 @@
     }
   }
 
-.mail-label__input {
+// .mail-label__input,
+// .name-label__input .disabled {
 
-    &:invalid{
-        border-color: red;
-    }
+//     &:invalid{
+//         border-color: red;
+//     }
 
-}
+// }
 
-.modal-wrapper:focus-within {
-
-    .modal-wrapper__button{
-        background-color: $main-theme-color;
-    }
-
-}
