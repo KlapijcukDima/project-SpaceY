@@ -29,6 +29,10 @@
   font-weight: 700;
   line-height: calc(22 / 18);
   color: #ffffff;
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+  }
 }
 
 .basic--text {
@@ -36,6 +40,10 @@
   font-weight: 500;
   line-height: calc(17 / 14);
   color: #ffffff;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(19 / 16);
+  }
 }
 
 .logo {
@@ -53,11 +61,17 @@
   &__top-wrapper {
     display: flex;
     column-gap: 20px;
+    @media (min-width: 768px) {
+      gap: 44px;
+    }
   }
 
   &__bottom-wrapper {
     display: flex;
     column-gap: 10px;
+    @media (min-width: 768px) {
+      gap: 64px;
+    }
   }
 }
 
@@ -72,8 +86,8 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    padding: 60px 24px;
-    max-width: 768px;
+    padding: 60px 40px 60px 24px;
+    width: 768px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -103,16 +117,15 @@
 
 .navigation__item:last-child {
   margin-bottom: 32px;
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .timetable {
   &__title {
     margin-bottom: 18px;
     white-space: nowrap;
-  }
-  &__article {
-    width: 85px;
-    height: 34px;
   }
 }
 
@@ -130,9 +143,10 @@
       display: block;
     }
   }
-  .nowrap {
-    white-space: nowrap;
-  }
+}
+.nowrap {
+  white-space: nowrap;
+  display: block;
 }
 
 .picture {
