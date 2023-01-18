@@ -1,4 +1,9 @@
 .store {
+  padding-bottom: 60px;
+  @media (min-width: 768px) {
+    padding-bottom: 100px;
+  }
+
   &__title {
     display: flex;
     gap: 14px;
@@ -46,7 +51,7 @@
       width: calc((100% - 32px * 1) / 2);
     }
   }
-  
+
   &__text {
     margin-top: 12px;
     margin-bottom: 6px;
