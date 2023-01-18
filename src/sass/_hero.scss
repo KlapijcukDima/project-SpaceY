@@ -28,12 +28,10 @@
 .hero {
   padding-bottom: 100px;
   @media screen and (min-width: 768px) {
-    // padding-top: 38px;
     padding-bottom: 150px;
   }
 
   @media screen and (min-width: 1280px) {
-    // padding-top: 64px;
     padding-bottom: 180px;
   }
 
@@ -56,7 +54,7 @@
     position: absolute;
     text-align: center;
     left: 50%;
-    top: 224px;
+    bottom: 0;
 
     transform: translate(-50%, 41%);
     font-weight: 400;
@@ -67,8 +65,7 @@
     @media screen and (min-width: 768px) {
       font-size: 120px;
       transform: translate(-50%, 45%);
-      top: 281px;
-      bottom: -290px;
+      
     }
 
     @media screen and (min-width: 1280px) {
