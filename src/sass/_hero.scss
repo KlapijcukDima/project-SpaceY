@@ -26,26 +26,27 @@
 // }
 
 .hero {
+  padding-bottom: 100px;
   @media screen and (min-width: 768px) {
     // padding-top: 38px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
   }
 
   @media screen and (min-width: 1280px) {
     // padding-top: 64px;
-    padding-bottom: 100px;
+    padding-bottom: 180px;
   }
-  
+
   &__container {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  
+
     @media screen and (max-width: 767.98px) {
       justify-content: center;
     }
-  
+
     @media screen and (min-width: 1280px) {
       justify-content: space-between;
     }
@@ -55,24 +56,25 @@
     position: absolute;
     text-align: center;
     left: 50%;
-    top: 148px;
-    bottom: 0;
+    top: 224px;
+
     transform: translate(-50%, 41%);
     font-weight: 400;
     font-size: 52px;
     line-height: 1.2;
     text-transform: uppercase;
-  
+
     @media screen and (min-width: 768px) {
       font-size: 120px;
       transform: translate(-50%, 45%);
-      top: 400px;
+      top: 281px;
+      bottom: -290px;
     }
-  
+
     @media screen and (min-width: 1280px) {
       font-size: 160px;
       transform: translate(-50%, 42%);
-  
+
       &::after {
         content: '';
         display: block;
@@ -93,14 +95,14 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.21;
-  
+
     @media screen and (min-width: 768px) {
       width: 76px;
       margin-right: 40px;
       margin-left: 49px;
       font-size: 24px;
     }
-  
+
     @media screen and (min-width: 1280px) {
       width: 101px;
       margin-left: 210px;
@@ -114,7 +116,7 @@
     height: 274px;
     object-fit: cover;
     object-position: center;
-  
+
     @media screen and (min-width: 768px) {
       width: 390px;
       height: 636px;
@@ -140,23 +142,23 @@
     width: 64px;
     height: 76px;
     left: 224px;
-  
+
     background-image: url(../svg/symbol-defs.svg#hero-btn-mobile);
-  
+
     @media screen and (min-width: 768px) {
       margin-left: 20px;
       width: 145px;
       height: 150px;
-  
+
       background-image: url(../svg/symbol-defs.svg#hero-btn-tablet);
     }
-  
+
     @media screen and (min-width: 1280px) {
       margin-right: 145px;
       margin-left: 0px;
       width: 166px;
       height: 166px;
-  
+
       background-image: url(../svg/symbol-defs.svg#hero-btn-mobile);
     }
   }
