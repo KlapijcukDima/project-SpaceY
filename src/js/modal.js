@@ -49,9 +49,9 @@
 
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[mobile-menu-open]"),
-    closeModalBtn: document.querySelector("[mobile-menu-close]"),
-    modal: document.querySelector("[mobile-menu]"),
+    openModalBtn: document.querySelector("[data-mobile-open]"),
+    closeModalBtn: document.querySelector("[data-mobile-close]"),
+    modal: document.querySelector("[data-mobile]"),
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);

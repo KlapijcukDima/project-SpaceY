@@ -26,15 +26,15 @@
         </svg>
       </button>
 
-      <button type="button" class="menu-opener" mobile-menu-open>
+      <button type="button" class="menu-opener" data-mobile-open>
         <svg class="menu-opener__svg">
           <use href="./images/icons.svg#burger"></use>
         </svg>
       </button>
     </div>
 
-    <div class="mobile-menu faded" mobile-menu>
-      <button type="button" class="mobile-menu__closer" mobile-menu-close>
+    <div class="mobile-menu faded" data-mobile>
+      <button type="button" class="mobile-menu__closer" data-mobile-close>
         <svg class="mobile-menu__svg">
           <use href="./images/icons.svg#close"></use>
         </svg>
@@ -82,8 +82,8 @@
         call you back.
       </p>
 
-      <form action="" class="">
-        <ladel class="name-label">
+      <form>
+        <label class="name-label">
           <span class="name-label__title disabled">Name</span>
           <input
             name="username"
@@ -94,9 +94,9 @@
             pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
             title="Username must be two words separated by space."
           />
-        </ladel>
+        </label>
 
-        <ladel class="mail-label">
+        <label class="mail-label">
           <span class="mail-label__title">Email</span>
           <input
             name="e-mail"
@@ -107,7 +107,7 @@
             pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
             title="Email must follow abcdef@abcde.com"
           />
-        </ladel>
+        </label>
 
         <button type="submit" class="modal-wrapper__button modal-btn" data-action="send" disabled>Send</button>
       </form>
