@@ -51,18 +51,24 @@
 
   @media screen and (min-width: 1280px) {
     display: block;
+    margin-right: 210px;
   }
 }
 
 .footer {
   background-color: #000000;
   max-width: 1280px;
+  margin: 0 auto;
 
   &__top-wrapper {
     display: flex;
     column-gap: 20px;
     @media (min-width: 768px) {
       gap: 44px;
+    }
+    @media (min-width: 1280px) {
+      gap: 80px;
+      margin-right: auto;
     }
   }
 
@@ -71,6 +77,9 @@
     column-gap: 10px;
     @media (min-width: 768px) {
       gap: 64px;
+    }
+    @media (min-width: 1280px) {
+      gap: 208px;
     }
   }
 }
@@ -91,8 +100,9 @@
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 64px 72px;
-    max-width: 1280px;
+    padding: 72px 48px 72px 24px;
+    width: 1280px;
+    justify-content: flex-start;
   }
 }
 
