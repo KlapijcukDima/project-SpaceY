@@ -23,7 +23,7 @@
               type="image/jpg"
             />
             <source
-              media="(max-width: 480px)"
+              media="(max-width: 767px)"
               srcset="
                 /src/images/blog2-mobile@1x.jpg 1x,
                 /src/images/blog2-mobile@2x.jpg 2x
@@ -31,14 +31,7 @@
               type="image/jpg"
             />
 
-            <img
-              srcset="
-                /src/images/blog2-mobile@1x.jpg 1x,
-                /src/images/blog2-mobile@2x.jpg 2x
-              "
-              src="/src/images/blog2-mobile@1x.jpg"
-              alt="Квітка1"
-            />
+            <img src="/src/images/blog2-mobile@1x.jpg" alt="Квітка1" />
           </picture>
         </li>
         <li class="swiper-slide">
@@ -61,7 +54,7 @@
               type="image/jpg"
             />
             <source
-              media="(max-width: 480px)"
+              media="(max-width: 767px)"
               srcset="
                 /src/images/blog1-mobile@1x.jpg 1x,
                 /src/images/blog1-mobile@2x.jpg 2x
@@ -69,14 +62,7 @@
               type="image/jpg"
             />
 
-            <img
-              srcset="
-                /src/images/blog1-mobile@1x.jpg 1x,
-                /src/images/blog1-mobile@2x.jpg 2x
-              "
-              src="/src/images/blog1-mobile@1x.jpg"
-              alt="Квітка2"
-            />
+            <img src="/src/images/blog1-mobile@1x.jpg" alt="Квітка2" />
           </picture>
         </li>
         <li class="swiper-slide">
@@ -99,7 +85,7 @@
               type="image/jpg"
             />
             <source
-              media="(max-width: 480px)"
+              media="(max-width: 767px)"
               srcset="
                 /src/images/blog3-mobile@1x.jpg 1x,
                 /src/images/blog3-mobile@2x.jpg 2x
@@ -107,14 +93,7 @@
               type="image/jpg"
             />
 
-            <img
-              srcset="
-                /src/images/blog3-mobile@1x.jpg 1x,
-                /src/images/blog3-mobile@2x.jpg 2x
-              "
-              src="/src/images/blog3-mobile@1x.jpg"
-              alt="Квітка3"
-            />
+            <img src="/src/images/blog3-mobile@1x.jpg" alt="Квітка3" />
           </picture>
         </li>
         <li class="swiper-slide">
@@ -137,7 +116,7 @@
               type="image/jpg"
             />
             <source
-              media="(max-width: 480px)"
+              media="(max-width: 767px)"
               srcset="
                 /src/images/flowers1-mobile@1x.jpg 1x,
                 /src/images/flowers1-mobile@2x.jpg 2x
@@ -145,14 +124,7 @@
               type="image/jpg"
             />
 
-            <img
-              srcset="
-                /src/images/flowers1-mobile@1x.jpg 1x,
-                /src/images/flowers1-mobile@2x.jpg 2x
-              "
-              src="./images/flowers1-mobile@1x.jpg"
-              alt="Квітка4"
-            />
+            <img src="./images/flowers1-mobile@1x.jpg" alt="Квітка4" />
           </picture>
         </li>
         <li class="swiper-slide">
@@ -175,7 +147,7 @@
               type="image/jpg"
             />
             <source
-              media="(max-width: 480px)"
+              media="(max-width: 767px)"
               srcset="
                 /src/images/flowers2-mobile@1x.jpg 1x,
                 /src/images/flowers2-mobile@2x.jpg 2x
@@ -183,14 +155,7 @@
               type="image/jpg"
             />
 
-            <img
-              srcset="
-                /src/images/flowers2-mobile@1x.jpg 1x,
-                /src/images/flowers2-mobile@2x.jpg 2x
-              "
-              src="./images/flowers2-mobile@1x.jpg"
-              alt="Квітка5"
-            />
+            <img src="./images/flowers2-mobile@1x.jpg" alt="Квітка5" />
           </picture>
         </li>
         <li class="swiper-slide">
@@ -213,7 +178,7 @@
               type="image/jpg"
             />
             <source
-              media="(max-width: 480px)"
+              media="(max-width: 767px)"
               srcset="
                 /src/images/flowers3-mobile@1x.jpg 1x,
                 /src/images/flowers3-mobile@2x.jpg 2x
@@ -221,14 +186,7 @@
               type="image/jpg"
             />
 
-            <img
-              srcset="
-                /src/images/flowers3-mobile@1x.jpg 1x,
-                /src/images/flowers3-mobile@2x.jpg 2x
-              "
-              src="./images/flowers3-mobile@1x.jpg"
-              alt="Квітка6"
-            />
+            <img src="./images/flowers3-mobile@1x.jpg" alt="Квітка6" />
           </picture>
         </li>
       </ul>
@@ -245,13 +203,17 @@
         </svg>
       </button>
 
-      <!-- <svg class="swiper-button-prev" width="41" height="27">
-        <use href="./svg/symbol-defs.svg#blog-left"></use>
-      </svg>
+      <button class="swiper-button left-button" type="button"> 
+        <svg class="left-button" width="96" height="64">
+          <use href="./svg/symbol-defs.svg#arrow-left"> </use>
+        </svg>
+      </button>
 
-      <svg class="swiper-button-next" width="41" height="27">
-        <use href="./svg/symbol-defs.svg#blog-right"></use>
-      </svg> -->
+      <button class="swiper-button right-button" type="button"> 
+        <svg class="right-button" width="96" height="64">
+          <use href="./svg/symbol-defs.svg#arrow-right"> </use>
+        </svg>
+      </button>
     </div>
 
     <div class="blog__wrapper">
@@ -337,35 +299,4 @@
     </div>
   </div>
 </section>
-<script src="./js/blog-modal.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-<script>
-  var swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
-    direction: getDirection(),
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    effect: 'coverflow',
-    coverflowEffect: {
-      rotate: -28,
-      stretch: 1,
-      depth: 100,
-      slideShadows: false,
-    },
-    on: {
-      resize: function () {
-        swiper.changeDirection(getDirection());
-      },
-    },
-  });
-
-  function getDirection() {
-    var windowWidth = window.innerWidth;
-    var direction = window.innerWidth <= 760 ? 'horizontal' : 'horizontal';
-
-    return direction;
-  }
-</script>

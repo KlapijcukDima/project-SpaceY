@@ -1,22 +1,8 @@
-// .blog {
-//   min-width: 320px;
-//   padding: 0 16px 60px 16px;
-//   margin: 0 auto;
 
-//   @media (min-width: 480px) {
-//     max-width: 480px;
-//     padding: 0 24px 100px 24px;
-//   }
-//   @media (min-width: 768px) {
-//     max-width: 768px;
-//   }
-//   @media (min-width: 1280px) {
-//     max-width: 1280px;
-//   }
-// }
-
-.blog img{
+.blog.swiper-img {
+  display: block;
   width: auto;
+  height: 100%;
 }
 
 .blog__heading {
@@ -121,25 +107,15 @@
 
 /* SLIDER */
 .swiper {
-  max-width: 320px;
-  // height: 181px;
+  margin: 0 -16px;
 }
-
 @media screen and (min-width: 768px) {
   .swiper {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .swiper {
-    max-width: 1280px;
+    margin: 0 -24px;
   }
 }
 
 .swiper-slide {
-  // height: 100%;
-  // width: 100%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -159,34 +135,73 @@
   position: relative;
 }
 
-// .swiper-img {
-//   width: 153px;
-//   height: 181px;
-
-//   @media screen and (min-width:768px){
-//     width: 344px;
-//   height: 398px;
-//   }
-// }
-
 .swiper-button {
   background-color: inherit;
   text-decoration: none;
   border: none;
 }
 
-.swiper-button-next{
-  position: absolute;
-  fill: rgb(192, 16, 16);
-  width: 27px;
-  height: 41px;
+.swiper button {
+  cursor: pointer;
+
+  .swiper-button-next {
+    display: block;
+    position: absolute;
+    fill: rgb(255, 255, 255);
+    width: 41px;
+    height: 27px;
+    top: 25px;
+    right: 35px;
+    @media screen and (min-width: 768px) {
+      width: 97px;
+      height: 64px;
+      right: 50px;
+    }
+    @media screen and (min-width: 1280px) {
+      opacity: 0;
+    }
+  }
+
+  .swiper-button-prev {
+    display: block;
+    position: absolute;
+    fill: rgb(255, 255, 255);
+    width: 41px;
+    height: 27px;
+    top: 25px;
+    left: 35px;
+    @media screen and (min-width: 768px) {
+      width: 97px;
+      height: 64px;
+      left: 50px;
+    }
+    @media screen and (min-width: 1280px) {
+      opacity: 0;
+    }
+  }
 }
 
-.swiper-button-prev {
-  position: absolute;
-  fill: rgb(212, 20, 20);
-  width: 27px;
-  height: 41px;
+.swiper-button.left-button {
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 175;
+    left: 65;
+    z-index: 5;
+    display: block;
+  }
+}
+
+.swiper-button.right-button {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 175;
+    right: 65;
+    z-index: 5;
+    display: block;
+  }
 }
 
 .swiper-button-next:after,
@@ -235,6 +250,7 @@
   }
 }
 
+
 .subscribe-img {
   @media screen and (min-width: 1280px) {
     width: 428px;
@@ -273,11 +289,6 @@
   }
 
   &__box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
-    align-items: center;
     padding: 18px 16px 28px 16px;
 
     @media screen and (min-width: 768px) {
