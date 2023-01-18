@@ -88,13 +88,13 @@
 
 .container--margin-bottom {
 
-    padding-bottom: 32px;
+    margin-bottom: 32px;
 
     @media screen and (min-width: 768px) {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
     }
 
     @media screen and (min-width: 1280px) {
-        padding-bottom: 69px;
+        margin-bottom: 69px;
     }
 }
