@@ -27,12 +27,14 @@
 .footer--title {
   font-size: 18px;
   font-weight: 700;
+  line-height: calc(22 / 18);
   color: #ffffff;
 }
 
 .basic--text {
   font-size: 14px;
   font-weight: 500;
+  line-height: calc(17 / 14);
   color: #ffffff;
 }
 
@@ -46,6 +48,17 @@
 
 .footer {
   background-color: #000000;
+  max-width: 1280px;
+
+  &__top-wrapper {
+    display: flex;
+    column-gap: 20px;
+  }
+
+  &__bottom-wrapper {
+    display: flex;
+    column-gap: 10px;
+  }
 }
 
 .container__footer {
@@ -53,8 +66,6 @@
   margin: 0 auto;
 
   @media screen and (max-width: 767.98px) {
-    display: flex;
-    flex-wrap: wrap;
     max-width: 480px;
   }
 
@@ -64,7 +75,7 @@
     padding: 60px 24px;
     max-width: 768px;
   }
-  
+
   @media screen and (min-width: 1280px) {
     padding: 64px 72px;
     max-width: 1280px;
@@ -73,7 +84,7 @@
 
 .container--basic {
   @media screen and (max-width: 767.98px) {
-    flex-basis: calc((100% - 44px) / 2);
+    flex-basis: calc((100% - 40px) / 2);
   }
 }
 
@@ -90,13 +101,14 @@
   }
 }
 
-.navigation__item:last-child{
+.navigation__item:last-child {
   margin-bottom: 32px;
 }
 
 .timetable {
   &__title {
     margin-bottom: 18px;
+    white-space: nowrap;
   }
   &__article {
     width: 85px;
@@ -117,6 +129,9 @@
     @media screen and (max-width: 767.98px) {
       display: block;
     }
+  }
+  .nowrap {
+    white-space: nowrap;
   }
 }
 
