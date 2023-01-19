@@ -57,8 +57,16 @@
 
 .footer {
   background-color: #000000;
-  max-width: 1280px;
   margin: 0 auto;
+  
+
+  @include for-size(tablet) {
+    padding: 60px 40px 60px 24px;
+  }
+
+  @include for-size(desktop) {
+    padding: 72px 48px 72px 24px;
+  }
 
   &__top-wrapper {
     display: flex;
@@ -85,7 +93,6 @@
 }
 
 .container__footer {
-  padding: 32px 16px;
   margin: 0 auto;
 
   @media screen and (max-width: 767.98px) {
@@ -94,13 +101,12 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
-    padding: 60px 40px 60px 24px;
+    justify-content: space-between;    
     width: 768px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding: 72px 48px 72px 24px;
+    
     width: 1280px;
     justify-content: flex-start;
   }
